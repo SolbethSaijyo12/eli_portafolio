@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>ELIZABETH_PORTAFOLIODIGITAL</title>
+</head>
+<body>
+    
+<header>
+
+    <div class="logo">
+        <img id="monograma" src="Imagenes_pg/monograma.png" alt="Monograma">
+      </div>
+
+    <nav> 
+        <ul>
+           <button class="Inicio"> <li ><a href="index.html"> INICIO </a></li> </button>
+           <button class="Experiencia"> <li><a href="EXPERIENCIA.html"> EXPERIENCIA </a></li> </button>
+           <button class="Certificados"> <li><a href="CERTIFICADOS.html"> CERTIFICADOS </a></li> </button>
+           <button class="Contactos"> <li><a href="CONTACTOS.html"> CONTACTO </a></li> </button>
+        </ul>
+    </nav>
+</header>
+<br>
+<br>
+<body>
+    <div class="main-contac">
+    <div class="containercontac">
+        <h2 class="titulo">Contacteme</h2>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita el envío automático
+
+            let formData = new FormData(this);
+
+            fetch("procesar_formulario.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("resultado").innerText = data;
+            })
+            .catch(error => {
+                document.getElementById("resultado").innerText = "Error en el envío.";
+            });
+        });
+    </script>
+
+<!-- HTML: Coloca este código en tu documento, por ejemplo, al final del body -->
+<a href="https://wa.me/5547936309?text=Hola,%20quisiera%20más%20información" class="whatsapp-button" target="_blank">
+    <img src="Imagenes_pg/whatsapp.png" alt="Chat via WhatsApp">
+  </a>
+</body>
+
+<br>
+<br>
+
+<footer id="pie"> 
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com/share/1AE7p1rhpa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/LizzieMor1266?t=cNLl-TBMboRKn6G5etuE0Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/solbeth_sai?igsh=MTR3dXEzeDE0ODQ3Nw==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/crisol-elizabeth-castro-jim%C3%A9nez-06143929a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      @ 2025 Derechos reservados Crisol Elizabeth Castro Jimenez
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+/* Contenedor principal que aloja las tarjetas */
+.container {
+    max-width: 1200px;              /* Ancho máximo */
+    margin: 0 auto;                 /* Centrar horizontalmente */
+    padding: 2rem;                  /* Espacio alrededor */
+    display: grid;                  /* Activar grid */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* auto-fit, minmax => Para adaptar columnas automáticamente */
+    gap: 1.5rem;                    /* Espacio entre tarjetas */
+  }
+  
+  /* Cada tarjeta */
+  .card {
+    background-color: #1E1E1E;      /* Color de fondo para la tarjeta */
+    border-radius: 8px;             /* Esquinas redondeadas */
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    transition: transform 0.2s ease;
+  }
+  
+  /* Efecto al pasar el ratón */
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Ajustar imágenes dentro de las tarjetas */
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+  }
