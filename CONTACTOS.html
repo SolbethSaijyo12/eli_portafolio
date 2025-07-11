@@ -4,92 +4,285 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>ELIZABETH_PORTAFOLIODIGITAL</title>
+    <title>Contacto - Elizabeth Castro</title>
 </head>
 <body>
     
 <header>
-
     <div class="logo">
         <img id="monograma" src="Imagenes_pg/monograma.png" alt="Monograma">
-      </div>
+    </div>
 
     <nav> 
         <ul>
-           <button class="Inicio"> <li ><a href="index.html"> INICIO </a></li> </button>
-           <button class="Experiencia"> <li><a href="EXPERIENCIA.html"> EXPERIENCIA </a></li> </button>
-           <button class="Certificados"> <li><a href="CERTIFICADOS.html"> CERTIFICADOS </a></li> </button>
-           <button class="Contactos"> <li><a href="CONTACTOS.html"> CONTACTO </a></li> </button>
+           <button class="Inicio"><li><a href="index.html">INICIO</a></li></button>
+           <button class="Experiencia"><li><a href="EXPERIENCIA.html">EXPERIENCIA</a></li></button>
+           <button class="Certificados"><li><a href="CERTIFICADOS.html">CERTIFICADOS</a></li></button>
+           <button class="Contactos"><li><a href="CONTACTOS.html">CONTACTO</a></li></button>
         </ul>
     </nav>
 </header>
-<br>
-<br>
-<body>
+
+<main>
     <div class="main-contac">
-    <div class="containercontac">
-        <h2 class="titulo">Contacteme</h2>
-        <form id="contactForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+        <div class="containercontac">
+            <h2 class="titulo">¡Conectemos!</h2>
+            
+            <!-- Información de contacto -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>e.elizabeth.jmnz12@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>+52 55 4793 6309</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Ubicación</h4>
+                        <p>Estado de México, México</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>Crisol Elizabeth Castro</p>
+                    </div>
+                </div>
+            </div>
 
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <!-- Redes sociales destacadas -->
+            <div class="social-showcase">
+                <h3>Sígueme en mis redes</h3>
+                <div class="social-grid">
+                    <a href="https://www.facebook.com/share/1AE7p1rhpa/" target="_blank" class="social-card facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://x.com/LizzieMor1266?t=cNLl-TBMboRKn6G5etuE0Q&s=09" target="_blank" class="social-card twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://www.instagram.com/solbeth_sai?igsh=MTR3dXEzeDE0ODQ3Nw==" target="_blank" class="social-card instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/crisol-elizabeth-castro-jim%C3%A9nez-06143929a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-card linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
 
-            <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" name="asunto" required>
+            <!-- Formulario de contacto -->
+            <form id="contactForm" method="POST" action="procesar_formulario.php">
+                <h3>Envíame un mensaje</h3>
+                
+                <label for="nombre">Nombre completo *</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
+                <label for="email">Correo Electrónico *</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com">
 
-            <input type="submit" value="Enviar">
-        </form>
+                <label for="telefono">Teléfono (opcional)</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+52 55 1234 5678">
+
+                <label for="empresa">Empresa/Organización (opcional)</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Nombre de tu empresa">
+
+                <label for="asunto">Asunto *</label>
+                <input type="text" id="asunto" name="asunto" required placeholder="¿De qué quieres hablar?">
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" required placeholder="Cuéntame más sobre tu proyecto o consulta..."></textarea>
+
+                <input type="submit" value="Enviar Mensaje">
+            </form>
+
+            <div id="resultado" class="form-result"></div>
+        </div>
     </div>
-    </div>
 
-    <script>
-        document.getElementById("contactForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Evita el envío automático
-
-            let formData = new FormData(this);
-
-            fetch("procesar_formulario.php", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("resultado").innerText = data;
-            })
-            .catch(error => {
-                document.getElementById("resultado").innerText = "Error en el envío.";
-            });
-        });
-    </script>
-
-<!-- HTML: Coloca este código en tu documento, por ejemplo, al final del body -->
-<a href="https://wa.me/5547936309?text=Hola,%20quisiera%20más%20información" class="whatsapp-button" target="_blank">
-    <img src="Imagenes_pg/whatsapp.png" alt="Chat via WhatsApp">
-  </a>
-</body>
-
-<br>
-<br>
+    <!-- Botón de WhatsApp flotante -->
+    <a href="https://wa.me/5547936309?text=Hola,%20quisiera%20más%20información" class="whatsapp-button" target="_blank">
+        <img src="Imagenes_pg/whatsapp.png" alt="Chat via WhatsApp">
+    </a>
+</main>
 
 <footer id="pie"> 
-
     <div class="social-icons">
         <a href="https://www.facebook.com/share/1AE7p1rhpa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://x.com/LizzieMor1266?t=cNLl-TBMboRKn6G5etuE0Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com/solbeth_sai?igsh=MTR3dXEzeDE0ODQ3Nw==" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/crisol-elizabeth-castro-jim%C3%A9nez-06143929a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
+    </div>
 
-      @ 2025 Derechos reservados Crisol Elizabeth Castro Jimenez
+    <div class="footer-bottom">
+        © 2025 Derechos reservados Crisol Elizabeth Castro Jiménez
+    </div>
 </footer>
 
+<style>
+/* Estilos específicos para la página de contacto */
+.social-showcase {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.social-showcase h3 {
+    font-family: 'Righteous', cursive;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.social-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 1rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: white;
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+.social-card.facebook {
+    background: linear-gradient(135deg, #1877f2, #42a5f5);
+}
+
+.social-card.twitter {
+    background: linear-gradient(135deg, #1da1f2, #0d8bd9);
+}
+
+.social-card.instagram {
+    background: linear-gradient(135deg, #e4405f, #fd1d1d, #fcb045);
+}
+
+.social-card.linkedin {
+    background: linear-gradient(135deg, #0077b5, #00a0dc);
+}
+
+.social-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.social-card i {
+    font-size: 2rem;
+}
+
+.form-result {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-weight: 600;
+    display: none;
+}
+
+.form-result.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    display: block;
+}
+
+.form-result.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    display: block;
+}
+
+form h3 {
+    font-family: 'Righteous', cursive;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    const formData = new FormData(this);
+    const submitButton = this.querySelector('input[type="submit"]');
+    const resultado = document.getElementById("resultado");
+    
+    // Deshabilitar botón y mostrar estado de carga
+    submitButton.disabled = true;
+    submitButton.value = "Enviando...";
+    
+    fetch("procesar_formulario.php", {
+        method: "POST",
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        resultado.className = "form-result success";
+        resultado.textContent = data;
+        resultado.style.display = "block";
+        
+        // Limpiar formulario si fue exitoso
+        if (data.includes("Gracias")) {
+            this.reset();
+        }
+    })
+    .catch(error => {
+        resultado.className = "form-result error";
+        resultado.textContent = "Error en el envío. Por favor intenta nuevamente.";
+        resultado.style.display = "block";
+    })
+    .finally(() => {
+        // Rehabilitar botón
+        submitButton.disabled = false;
+        submitButton.value = "Enviar Mensaje";
+        
+        // Ocultar mensaje después de 5 segundos
+        setTimeout(() => {
+            resultado.style.display = "none";
+        }, 5000);
+    });
+});
+</script>
+
+<script src="script.js"></script>
 
 </body>
 </html>

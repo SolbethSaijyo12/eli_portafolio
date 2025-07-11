@@ -4,84 +4,558 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>ELIZABETH_PORTAFOLIODIGITAL</title>
+    <title>Habilidades - Elizabeth Castro</title>
 </head>
 <body>
 
 <header>
     <div class="logo">
         <img id="monograma" src="Imagenes_pg/monograma.png" alt="Monograma">
-      </div>
+    </div>
     <nav> 
         <ul>
-           <button class="Inicio"> <li ><a href="index.html"> INICIO </a></li> </button>
-           <button class="Experiencia"> <li><a href="EXPERIENCIA.html"> EXPERIENCIA </a></li> </button>
-           <button class="Certificados"> <li><a href="CERTIFICADOS.html"> CERTIFICADOS </a></li> </button>
-           <button class="Contactos"> <li><a href="CONTACTOS.html"> CONTACTO </a></li> </button>
+           <button class="Inicio"><li><a href="index.html">INICIO</a></li></button>
+           <button class="Experiencia"><li><a href="EXPERIENCIA.html">EXPERIENCIA</a></li></button>
+           <button class="Certificados"><li><a href="CERTIFICADOS.html">CERTIFICADOS</a></li></button>
+           <button class="Contactos"><li><a href="CONTACTOS.html">CONTACTO</a></li></button>
         </ul>
     </nav>
 </header>
 
-<br>
-<br>
-<br>
+<main>
+    <section class="skills-intro">
+        <h2>Mis Habilidades y Competencias</h2>
+        <p class="intro-description">
+            A lo largo de mi formación académica y experiencia práctica, he desarrollado un conjunto diverso de habilidades 
+            técnicas y competencias blandas que me permiten abordar proyectos complejos con confianza y creatividad.
+        </p>
+    </section>
 
-<div class="container2">
-    <!-- Tarjeta 1 -->
-    <div class="card2">
-        <img src="Imagenes_pg/tecnicas_hab.png" alt="Tecnicas" class="habilidades_img"/>
-        <br>
-        <h3>Habilidades técnicas.</h3>
-        <p>
-            Manejo lenguajes de programación como JAVA, SQL, y Python, lo que me permite abordar desde el desarrollo
-            de sistemas hasta la gestión de bases de datos.
-        </p>
-        <p>
-            Conocimiento en HTML y CSS, esencial para el diseño y estructuración de interfaces web.
-        </p>
-        <p>
-            Dominio de la paquetería de Office, que facilita la elaboración de reportes, presentaciones y análisis de datos.
-        </p>
-    </div>
+    <section class="skills-content">
+        <div class="container2">
+            <!-- Tarjeta 1: Habilidades Técnicas -->
+            <div class="card2 skills-card">
+                <div class="skill-header">
+                    <div class="skill-icon technical">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <img src="Imagenes_pg/tecnicas_hab.png" alt="Habilidades Técnicas" class="habilidades_img"/>
+                </div>
+                
+                <div class="skill-content">
+                    <h3>Habilidades Técnicas</h3>
+                    
+                    <div class="skill-category">
+                        <h4><i class="fas fa-laptop-code"></i> Lenguajes de Programación</h4>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Java</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">SQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- Tarjeta 2 -->
-    <div class="card2">
-        <img src="Imagenes_pg/gato_competencia.png" alt="Competencias" class="habilidades_img"/>
-        <br>
-        <h3>Comptencias blandas.</h3>
-        <p>
-            Adaptabilidad: Mi facilidad para adaptarme a entornos cambiantes me permite integrar nuevas tecnologías y metodologías de trabajo con rapidez.
-        </p>
-        <p>    
-            Capacidad para trabajar bajo presión: Demuestro un rendimiento óptimo incluso en situaciones de alta demanda y retos, lo cual es crucial en 
-            proyectos con plazos estrictos.
-        </p>
-        <p>
-            Aunque mi inglés es básico, esta habilidad se complementa con una actitud proactiva hacia el aprendizaje continuo, lo que me permite mejorar en 
-            este aspecto conforme avanzo en mi carrera.
-        </p>
-    </div>
-</div>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-globe"></i> Desarrollo Web</h4>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-<br>
-<br>
-<br>
-<br>
+                    <div class="skill-category">
+                        <h4><i class="fas fa-tools"></i> Herramientas</h4>
+                        <div class="tools-grid">
+                            <span class="tool-tag">Microsoft Office</span>
+                            <span class="tool-tag">Git</span>
+                            <span class="tool-tag">MySQL</span>
+                            <span class="tool-tag">Arduino</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Competencias Blandas -->
+            <div class="card2 skills-card">
+                <div class="skill-header">
+                    <div class="skill-icon soft">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <img src="Imagenes_pg/gato_competencia.png" alt="Competencias Blandas" class="habilidades_img"/>
+                </div>
+                
+                <div class="skill-content">
+                    <h3>Competencias Blandas</h3>
+                    
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h4>Adaptabilidad</h4>
+                            <p>Mi facilidad para adaptarme a entornos cambiantes me permite integrar nuevas tecnologías y metodologías de trabajo con rapidez.</p>
+                        </div>
+
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h4>Trabajo bajo Presión</h4>
+                            <p>Demuestro un rendimiento óptimo incluso en situaciones de alta demanda y retos, crucial en proyectos con plazos estrictos.</p>
+                        </div>
+
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Trabajo en Equipo</h4>
+                            <p>Colaboro efectivamente con diferentes perfiles profesionales, aportando ideas y apoyando el logro de objetivos comunes.</p>
+                        </div>
+
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Resolución de Problemas</h4>
+                            <p>Analizo situaciones complejas y desarrollo soluciones creativas e innovadoras para superar desafíos técnicos.</p>
+                        </div>
+
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h4>Comunicación</h4>
+                            <p>Transmito ideas técnicas de manera clara y comprensible para diferentes audiencias, facilitando la colaboración.</p>
+                        </div>
+
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Aprendizaje Continuo</h4>
+                            <p>Mantengo una actitud proactiva hacia el aprendizaje, actualizándome constantemente en nuevas tecnologías y metodologías.</p>
+                        </div>
+                    </div>
+
+                    <div class="language-section">
+                        <h4><i class="fas fa-language"></i> Idiomas</h4>
+                        <div class="language-item">
+                            <span class="language-name">Español</span>
+                            <span class="language-level native">Nativo</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Inglés</span>
+                            <span class="language-level basic">Básico</span>
+                        </div>
+                        <p class="language-note">
+                            <i class="fas fa-info-circle"></i>
+                            Aunque mi inglés es básico, mantengo una actitud proactiva hacia el mejoramiento continuo de este idioma.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-summary">
+        <div class="summary-container">
+            <h3>¿Por qué elegirme?</h3>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <i class="fas fa-rocket"></i>
+                    <h4>Innovación</h4>
+                    <p>Busco constantemente nuevas formas de resolver problemas y mejorar procesos</p>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-target"></i>
+                    <h4>Orientación a Resultados</h4>
+                    <p>Me enfoco en entregar soluciones de calidad que cumplan con los objetivos establecidos</p>
+                </div>
+                <div class="summary-item">
+                    <i class="fas fa-heart"></i>
+                    <h4>Pasión por la Tecnología</h4>
+                    <p>Mi genuino interés por la tecnología se refleja en cada proyecto que desarrollo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer id="pie"> 
-
     <div class="social-icons">
         <a href="https://www.facebook.com/share/1AE7p1rhpa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://x.com/LizzieMor1266?t=cNLl-TBMboRKn6G5etuE0Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com/solbeth_sai?igsh=MTR3dXEzeDE0ODQ3Nw==" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/crisol-elizabeth-castro-jim%C3%A9nez-06143929a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
+    </div>
 
-      @ 2025 Derechos reservados Crisol Elizabeth Castro Jimenez
+    <div class="footer-bottom">
+        © 2025 Derechos reservados Crisol Elizabeth Castro Jiménez
+    </div>
 </footer>
 
+<style>
+/* Estilos específicos para la página de habilidades */
+.skills-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
+    padding: 2rem;
+}
+
+.intro-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+.skills-card {
+    position: relative;
+    padding: 2rem;
+    min-height: auto;
+}
+
+.skill-header {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.skill-icon {
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    z-index: 2;
+}
+
+.skill-icon.technical {
+    background: linear-gradient(135deg, #2196F3, #21CBF3);
+}
+
+.skill-icon.soft {
+    background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+}
+
+.skill-icon i {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.skill-content h3 {
+    color: var(--primary-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.skill-category {
+    margin-bottom: 2rem;
+}
+
+.skill-category h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.skill-name {
+    min-width: 100px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.skill-bar {
+    flex: 1;
+    height: 8px;
+    background: var(--light-bg);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 4px;
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+
+.tools-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tool-tag {
+    background: var(--light-bg);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(149, 27, 129, 0.2);
+}
+
+.soft-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.soft-skill-item {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    transition: var(--transition);
+}
+
+.soft-skill-item:hover {
+    background: rgba(149, 27, 129, 0.05);
+    transform: translateY(-2px);
+}
+
+.soft-skill-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+}
+
+.soft-skill-icon i {
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+.soft-skill-item h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.soft-skill-item p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.language-section {
+    background: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    margin-top: 2rem;
+}
+
+.language-section h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.language-name {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.language-level {
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.language-level.native {
+    background: #4CAF50;
+    color: white;
+}
+
+.language-level.basic {
+    background: #FF9800;
+    color: white;
+}
+
+.language-note {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+.language-note i {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.skills-summary {
+    background: var(--white);
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.summary-container h3 {
+    font-family: 'Righteous', cursive;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.summary-item {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.summary-item i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.summary-item h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.summary-item p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .skills-intro {
+        padding: 1rem;
+    }
+    
+    .soft-skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .skill-name {
+        min-width: auto;
+    }
+    
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<script>
+// Animar barras de progreso cuando entren en vista
+document.addEventListener('DOMContentLoaded', function() {
+    const progressBars = document.querySelectorAll('.skill-progress');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progressBar = entry.target;
+                const width = progressBar.getAttribute('data-width');
+                setTimeout(() => {
+                    progressBar.style.width = width;
+                }, 200);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    progressBars.forEach(bar => observer.observe(bar));
+});
+</script>
+
+<script src="script.js"></script>
 
 </body>
 </html>

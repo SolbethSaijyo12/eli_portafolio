@@ -4,81 +4,614 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>ELIZABETH_PORTAFOLIODIGITAL</title>
+    <title>Evidencias - Elizabeth Castro</title>
 </head>
 <body>
     
 <header>
-
     <div class="logo">
         <img id="monograma" src="Imagenes_pg/monograma.png" alt="Monograma">
-      </div>
+    </div>
 
     <nav> 
         <ul>
-           <button class="Inicio"> <li ><a href="index.html"> INICIO </a></li> </button>
-           <button class="Experiencia"> <li><a href="EXPERIENCIA.html"> EXPERIENCIA </a></li> </button>
-           <button class="Certificados"> <li><a href="CERTIFICADOS.html"> CERTIFICADOS </a></li> </button>
-           <button class="Contactos"> <li><a href="CONTACTOS.html"> CONTACTO </a></li> </button>
+           <button class="Inicio"><li><a href="index.html">INICIO</a></li></button>
+           <button class="Experiencia"><li><a href="EXPERIENCIA.html">EXPERIENCIA</a></li></button>
+           <button class="Certificados"><li><a href="CERTIFICADOS.html">CERTIFICADOS</a></li></button>
+           <button class="Contactos"><li><a href="CONTACTOS.html">CONTACTO</a></li></button>
         </ul>
     </nav>
 </header>
 
-<br>
-<br>
+<main>
+    <section class="evidence-intro">
+        <h2>Mis Proyectos y Evidencias</h2>
+        <p class="intro-description">
+            Aquí puedes encontrar una selección de mis proyectos más destacados, documentación técnica y evidencias 
+            de mi trabajo académico y profesional. Cada proyecto representa un paso importante en mi desarrollo como 
+            ingeniera en sistemas computacionales.
+        </p>
+    </section>
 
-<div class="container4">
-    <!-- Tarjeta 1 -->
-    <a class="card4" href="Imagenes_pg/Proyecto rector_CJCE_Documentación.pdf" target="_blank">
-        <img src="Imagenes_pg/RECTOR.jpg" alt="PDF 1">
-        <div class="description">
-            <h3>Proyecto Rector: DHL</h3>
-            <p>Realización dentro del proyecto de como es que la paquetería DHL podrá llegar a 
-                encontrar rutas accesibles;  utilizando como herramienta de apoyo la aplicación 
-                de Google Maps y una referencia de distancias entre dos puntos.</p>
+    <section class="evidence-gallery">
+        <div class="container4">
+            <!-- Proyecto 1 -->
+            <a class="card4 evidence-card" href="Imagenes_pg/Proyecto rector_CJCE_Documentación.pdf" target="_blank">
+                <div class="evidence-header">
+                    <div class="project-type">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Logística</span>
+                    </div>
+                    <div class="project-status">
+                        <span class="status-badge completed">Completado</span>
+                    </div>
+                </div>
+                
+                <div class="evidence-image">
+                    <img src="Imagenes_pg/RECTOR.jpg" alt="Proyecto Rector DHL">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver Documento</span>
+                    </div>
+                </div>
+                
+                <div class="evidence-content">
+                    <h3>Proyecto Rector: DHL</h3>
+                    <p class="project-description">
+                        Desarrollo de una solución innovadora para optimizar las rutas de entrega de DHL, 
+                        utilizando Google Maps API para encontrar rutas accesibles y calcular distancias 
+                        entre puntos de entrega de manera eficiente.
+                    </p>
+                    
+                    <div class="project-technologies">
+                        <span class="tech-tag">Google Maps API</span>
+                        <span class="tech-tag">Algoritmos</span>
+                        <span class="tech-tag">Optimización</span>
+                    </div>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <i class="fas fa-calendar"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Documentación</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Proyecto 2 -->
+            <a class="card4 evidence-card" href="Imagenes_pg/PROYECTORECTOR_MTCU.pdf" target="_blank">
+                <div class="evidence-header">
+                    <div class="project-type">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Educativo</span>
+                    </div>
+                    <div class="project-status">
+                        <span class="status-badge completed">Completado</span>
+                    </div>
+                </div>
+                
+                <div class="evidence-image">
+                    <img src="Imagenes_pg/MTCU.jpg" alt="Proyecto MTCU">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver Documento</span>
+                    </div>
+                </div>
+                
+                <div class="evidence-content">
+                    <h3>MTCU - Motivación Universitaria</h3>
+                    <p class="project-description">
+                        Diseño y desarrollo de un sitio web informativo dirigido a estudiantes de ingeniería 
+                        en sistemas computacionales, enfocado en la importancia de concluir la carrera universitaria 
+                        mediante wireframes, mockups, prototipos y diagramas UML.
+                    </p>
+                    
+                    <div class="project-technologies">
+                        <span class="tech-tag">UX/UI Design</span>
+                        <span class="tech-tag">Wireframes</span>
+                        <span class="tech-tag">UML</span>
+                        <span class="tech-tag">Prototipos</span>
+                    </div>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <i class="fas fa-calendar"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-users"></i>
+                            <span>Estudiantes</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Proyecto 3 -->
+            <a class="card4 evidence-card" href="Imagenes_pg/TESIS_CELAJE.pdf" target="_blank">
+                <div class="evidence-header">
+                    <div class="project-type">
+                        <i class="fas fa-store"></i>
+                        <span>E-commerce</span>
+                    </div>
+                    <div class="project-status">
+                        <span class="status-badge thesis">Tesis</span>
+                    </div>
+                </div>
+                
+                <div class="evidence-image">
+                    <img src="Imagenes_pg/TESIS.png" alt="Tienda Digital Celaje">
+                    <div class="image-overlay">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Ver Documento</span>
+                    </div>
+                </div>
+                
+                <div class="evidence-content">
+                    <h3>Tienda Digital "Celaje"</h3>
+                    <p class="project-description">
+                        Desarrollo completo de una tienda digital para el negocio "Celaje", creando una plataforma 
+                        oficial que trasciende las redes sociales y establece una presencia sólida en el comercio 
+                        electrónico con funcionalidades avanzadas de gestión y ventas.
+                    </p>
+                    
+                    <div class="project-technologies">
+                        <span class="tech-tag">E-commerce</span>
+                        <span class="tech-tag">Web Development</span>
+                        <span class="tech-tag">Base de Datos</span>
+                        <span class="tech-tag">PHP</span>
+                    </div>
+                    
+                    <div class="project-metrics">
+                        <div class="metric">
+                            <i class="fas fa-calendar"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="metric">
+                            <i class="fas fa-award"></i>
+                            <span>Proyecto de Tesis</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
-    </a>
+    </section>
 
-    <!-- Tarjeta 2 -->
-    <a class="card4" href="Imagenes_pg/PROYECTORECTOR_MTCU.pdf" target="_blank">
-        <img src="Imagenes_pg/MTCU.jpg" alt="PDF 2">
-        <div class="description">
-            <h3>MTCU</h3>
-            <p>Diseño de un sitio web que informe a los alumnos de ingeniería en sistemas 
-                computacionales, sobre la importancia de concluir una carrera universitaria, mediante 
-                sketch wireframes, mockups, prototipos y diagramas UML para generar motivación 
-                intrínseca de alumnos.</p>
-        </div>
-    </a>
-
-        <!-- Tarjeta 3 -->
-        <a class="card4" href="Imagenes_pg/TESIS_CELAJE.pdf" target="_blank">
-            <img src="Imagenes_pg/TESIS.png" alt="PDF 3">
-            <div class="description">
-                <h3>Tienda digital "Celaje"</h3>
-                <p>El desarrollo de la tienda digital del negocio “Celaje” surge de la necesidad de 
-                    mantener una mayor difusión fuera de las redes sociales, estableciendo un lugar oficial 
-                    dentro de la red.</p>
+    <section class="project-stats">
+        <div class="stats-container">
+            <h3>Estadísticas de Proyectos</h3>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Proyectos Principales</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Tecnologías Utilizadas</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-number">2024</div>
+                    <div class="stat-label">Año de Desarrollo</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Documentados</div>
+                </div>
             </div>
-        </a>
-</div>
+        </div>
+    </section>
 
-<br>
-<br>
+    <section class="skills-showcase">
+        <div class="showcase-container">
+            <h3>Habilidades Demostradas</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <h4>Análisis y Diseño</h4>
+                    <p>Capacidad para analizar problemas complejos y diseñar soluciones efectivas</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code"></i>
+                    <h4>Desarrollo Full-Stack</h4>
+                    <p>Experiencia en desarrollo tanto frontend como backend</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h4>Gestión de Datos</h4>
+                    <p>Diseño e implementación de bases de datos eficientes</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-file-alt"></i>
+                    <h4>Documentación Técnica</h4>
+                    <p>Elaboración de documentación clara y detallada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer id="pie"> 
-
     <div class="social-icons">
         <a href="https://www.facebook.com/share/1AE7p1rhpa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://x.com/LizzieMor1266?t=cNLl-TBMboRKn6G5etuE0Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com/solbeth_sai?igsh=MTR3dXEzeDE0ODQ3Nw==" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/crisol-elizabeth-castro-jim%C3%A9nez-06143929a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
+    </div>
 
-      @ 2025 Derechos reservados Crisol Elizabeth Castro Jimenez
+    <div class="footer-bottom">
+        © 2025 Derechos reservados Crisol Elizabeth Castro Jiménez
+    </div>
 </footer>
+
+<style>
+/* Estilos específicos para la página de evidencias */
+.evidence-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 4rem auto;
+    padding: 2rem;
+}
+
+.intro-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+.evidence-card {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    transition: var(--transition);
+}
+
+.evidence-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+}
+
+.evidence-header {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+.project-type {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    box-shadow: var(--shadow);
+}
+
+.project-type i {
+    font-size: 1rem;
+}
+
+.project-status {
+    display: flex;
+    align-items: center;
+}
+
+.status-badge {
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+}
+
+.status-badge.completed {
+    background: #4CAF50;
+}
+
+.status-badge.thesis {
+    background: #FF9800;
+}
+
+.evidence-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.evidence-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(149, 27, 129, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.evidence-card:hover .image-overlay {
+    opacity: 1;
+}
+
+.evidence-card:hover .evidence-image img {
+    transform: scale(1.1);
+}
+
+.image-overlay i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.image-overlay span {
+    font-weight: 600;
+}
+
+.evidence-content {
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.evidence-content h3 {
+    color: var(--primary-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.project-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex: 1;
+}
+
+.project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+    background: var(--light-bg);
+    color: var(--primary-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(149, 27, 129, 0.2);
+}
+
+.project-metrics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--light-bg);
+}
+
+.metric {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.metric i {
+    color: var(--primary-color);
+}
+
+.project-stats {
+    background: var(--white);
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.stats-container h3 {
+    font-family: 'Righteous', cursive;
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: var(--light-bg);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.stat-card:hover {
+    background: rgba(149, 27, 129, 0.05);
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem auto;
+}
+
+.stat-icon i {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.stat-number {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: var(--text-dark);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.skills-showcase {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 4rem 2rem;
+    margin: 4rem 0;
+}
+
+.showcase-container h3 {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+}
+
+.skill-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.skill-item i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-item h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.skill-item p {
+    opacity: 0.9;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .evidence-intro {
+        padding: 1rem;
+    }
+    
+    .evidence-content {
+        padding: 1.5rem;
+    }
+    
+    .project-metrics {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .evidence-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    
+    .project-technologies {
+        justify-content: center;
+    }
+}
+</style>
+
+<script src="script.js"></script>
 
 </body>
 </html>

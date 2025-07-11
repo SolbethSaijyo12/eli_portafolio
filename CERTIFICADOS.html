@@ -4,118 +4,308 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>ELIZABETH_PORTAFOLIODIGITAL</title>
+    <title>Certificados - Elizabeth Castro</title>
 </head>
 <body>
     
 <header>
-
     <div class="logo">
         <img id="monograma" src="Imagenes_pg/monograma.png" alt="Monograma">
-      </div>
+    </div>
 
     <nav> 
         <ul>
-           <button class="Inicio"> <li ><a href="index.html"> INICIO </a></li> </button>
-           <button class="Experiencia"> <li><a href="EXPERIENCIA.html"> EXPERIENCIA </a></li> </button>
-           <button class="Certificados"> <li><a href="CERTIFICADOS.html"> CERTIFICADOS </a></li> </button>
-           <button class="Contactos"> <li><a href="CONTACTOS.html"> CONTACTO </a></li> </button>
+           <button class="Inicio"><li><a href="index.html">INICIO</a></li></button>
+           <button class="Experiencia"><li><a href="EXPERIENCIA.html">EXPERIENCIA</a></li></button>
+           <button class="Certificados"><li><a href="CERTIFICADOS.html">CERTIFICADOS</a></li></button>
+           <button class="Contactos"><li><a href="CONTACTOS.html">CONTACTO</a></li></button>
         </ul>
     </nav>
 </header>
 
-<br>
-<br>
-<br>
-<br>
+<main>
+    <section class="certificates-intro">
+        <h2>Mis Certificaciones</h2>
+        <p class="intro-text">
+            A lo largo de mi formación académica y profesional, he obtenido diversas certificaciones que respaldan 
+            mis conocimientos y habilidades en tecnología, inteligencia artificial y redes de computadoras.
+        </p>
+    </section>
 
-<div class="container3">
-    <!-- Tarjeta 1 -->
-    <div class="card3">
-        <img src="Imagenes_pg/POTTENCIA1.jpg" alt="Referencia 1" class="certificado"/>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h3>PottencIA tu carrera: Introducción a la IA.</h3>
-    </div>
+    <section class="certificates-grid">
+        <div class="container3">
+            <!-- Tarjeta 1 -->
+            <div class="card3">
+                <div class="certificate-header">
+                    <i class="fas fa-brain certificate-icon"></i>
+                </div>
+                <img src="Imagenes_pg/POTTENCIA1.jpg" alt="Certificado PottencIA 1" class="certificado"/>
+                <div class="certificate-content">
+                    <h3>PottencIA tu carrera: Introducción a la IA</h3>
+                    <p class="certificate-description">
+                        Certificación fundamental en inteligencia artificial, cubriendo conceptos básicos 
+                        y aplicaciones prácticas de IA en el desarrollo profesional.
+                    </p>
+                    <div class="certificate-skills">
+                        <span class="skill-tag">Inteligencia Artificial</span>
+                        <span class="skill-tag">Machine Learning</span>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Tarjeta 2 -->
+            <div class="card3">
+                <div class="certificate-header">
+                    <i class="fas fa-robot certificate-icon"></i>
+                </div>
+                <img src="Imagenes_pg/POTTENCIA2.jpg" alt="Certificado PottencIA 2" class="certificado"/>
+                <div class="certificate-content">
+                    <h3>PottencIA: Bases y Conceptos claves de la IA</h3>
+                    <p class="certificate-description">
+                        Profundización en los fundamentos teóricos y prácticos de la inteligencia artificial, 
+                        incluyendo algoritmos y metodologías avanzadas.
+                    </p>
+                    <div class="certificate-skills">
+                        <span class="skill-tag">Algoritmos IA</span>
+                        <span class="skill-tag">Deep Learning</span>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Tarjeta 2 -->
-    <div class="card3">
-        <img src="Imagenes_pg/POTTENCIA2.jpg" alt="Referencia 2" class="certificado"/>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h3>PottencIA. Bases y Conceptos claves de la IA.</h3>
-    </div>
+            <!-- Tarjeta 3 -->
+            <div class="card3">
+                <div class="certificate-header">
+                    <i class="fas fa-network-wired certificate-icon"></i>
+                </div>
+                <img src="Imagenes_pg/CISCO.jpg" alt="Certificado Cisco" class="certificado"/>
+                <div class="certificate-content">
+                    <h3>Cisco Networking Academy: Conceptos básicos de redes</h3>
+                    <p class="certificate-description">
+                        Certificación en fundamentos de redes de computadoras, protocolos de comunicación 
+                        y configuración de equipos de red Cisco.
+                    </p>
+                    <div class="certificate-skills">
+                        <span class="skill-tag">Redes</span>
+                        <span class="skill-tag">TCP/IP</span>
+                        <span class="skill-tag">Cisco</span>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Tarjeta 4 -->
+            <div class="card3">
+                <div class="certificate-header">
+                    <i class="fab fa-google certificate-icon"></i>
+                </div>
+                <img src="Imagenes_pg/GOOGLE.jpg" alt="Certificado Google" class="certificado"/>
+                <div class="certificate-content">
+                    <h3>Prompt Design in Vertex AI Skill Badge</h3>
+                    <p class="certificate-description">
+                        Certificación de Google Cloud en diseño de prompts para inteligencia artificial, 
+                        utilizando Vertex AI para crear soluciones innovadoras.
+                    </p>
+                    <div class="certificate-skills">
+                        <span class="skill-tag">Google Cloud</span>
+                        <span class="skill-tag">Vertex AI</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Tarjeta 3 -->
-    <div class="card3">
-        <img src="Imagenes_pg/CISCO.jpg" alt="Referencia 3" class="certificado"/>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h3>Cisco Networking Academy. Conceptos básicos de redes</h3>
-    </div>
-
-
-    <!-- Tarjeta 4 -->
-    <div class="card3">
-        <img src="Imagenes_pg/GOOGLE.jpg" alt="Referencia 4" class="certificado"/>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h3>Prompt Design in Vertex AI Skill Badge</h3>
-    </div>
-</div>
-
-<br>
-<br>
+    <section class="certification-stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Certificaciones</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Áreas de Especialización</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2025</div>
+                <div class="stat-label">Año Actual</div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer id="pie"> 
-
     <div class="social-icons">
         <a href="https://www.facebook.com/share/1AE7p1rhpa/" target="_blank"><i class="fab fa-facebook-f"></i></a>
         <a href="https://x.com/LizzieMor1266?t=cNLl-TBMboRKn6G5etuE0Q&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
         <a href="https://www.instagram.com/solbeth_sai?igsh=MTR3dXEzeDE0ODQ3Nw==" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.linkedin.com/in/crisol-elizabeth-castro-jim%C3%A9nez-06143929a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      </div>
+    </div>
 
-      @ 2025 Derechos reservados Crisol Elizabeth Castro Jimenez
+    <div class="footer-bottom">
+        © 2025 Derechos reservados Crisol Elizabeth Castro Jiménez
+    </div>
 </footer>
+
+<style>
+/* Estilos específicos para la página de certificados */
+.certificates-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem auto;
+    padding: 2rem;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+.certificates-grid {
+    margin-bottom: 4rem;
+}
+
+.certificate-header {
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.certificate-icon {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.certificate-content {
+    margin-top: 2rem;
+}
+
+.certificate-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.certificate-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.certification-stats {
+    background: var(--white);
+    padding: 3rem 2rem;
+    margin: 4rem 0;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 1rem;
+}
+
+.stat-number {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-weight: 600;
+    color: var(--text-dark);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Ajustes para certificados */
+.card3 {
+    position: relative;
+    padding-top: 3rem;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificado {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .certificates-intro {
+        padding: 1rem;
+    }
+    
+    .stats-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .certificate-skills {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .certificate-header {
+        top: -15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .certificate-icon {
+        font-size: 1.2rem;
+    }
+}
+</style>
+
+<script src="script.js"></script>
 
 </body>
 </html>
