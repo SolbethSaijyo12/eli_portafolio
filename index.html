@@ -12,7 +12,7 @@
 <body>
 
     <div id="loading-screen">
-        <h1 class="loading-text">BIENVENID@ A MI PORTAFOLIO DIGITAL</h1>
+        <h1 class="loading-text">✨ BIENVENID@ A MI PORTAFOLIO DIGITAL ✨</h1>
     </div>
     
 <header>
@@ -22,10 +22,10 @@
 
     <nav> 
         <ul>
-           <button class="Inicio"><li><a href="index.html">INICIO</a></li></button>
-           <button class="Experiencia"><li><a href="EXPERIENCIA.html">EXPERIENCIA</a></li></button>
-           <button class="Certificados"><li><a href="CERTIFICADOS.html">CERTIFICADOS</a></li></button>
-           <button class="Contactos"><li><a href="CONTACTOS.html">CONTACTO</a></li></button>
+           <button class="Inicio"><li><a href="index.html">🏠 INICIO</a></li></button>
+           <button class="Experiencia"><li><a href="EXPERIENCIA.html">🎓 EXPERIENCIA</a></li></button>
+           <button class="Certificados"><li><a href="CERTIFICADOS.html">🏆 CERTIFICADOS</a></li></button>
+           <button class="Contactos"><li><a href="CONTACTOS.html">📞 CONTACTO</a></li></button>
         </ul>
     </nav>
 </header>
@@ -33,14 +33,14 @@
 <main>
     <section class="hero-section">
         <h1>Castro Jiménez Crisol Elizabeth</h1>
-        <p class="subtitle">Ingeniera en Sistemas Computacionales</p>
+        <p class="subtitle">💻 Ingeniera en Sistemas Computacionales</p>
         
         <div class="Primera_img">
             <img src="Imagenes_pg/yop.jpg" alt="Crisol Elizabeth Castro Jiménez" class="Imagenes_pg">
         </div>
 
         <div class="intro-text">
-            <p>Apasionada por la tecnología y el desarrollo de soluciones innovadoras. 
+            <p>🚀 Apasionada por la tecnología y el desarrollo de soluciones innovadoras. 
             Especializada en desarrollo web, bases de datos y programación orientada a objetos.</p>
         </div>
     </section>
@@ -49,27 +49,27 @@
         <div class="actions-grid">
             <a href="Imagenes_pg/CV_ELI.pdf" target="_blank" class="cv">
                 <i class="fas fa-file-pdf"></i>
-                <span>CV VITAE</span>
+                <span>📄 CV VITAE</span>
             </a>
 
             <button class="evi" onclick="window.location.href='evidencia.html';">
                 <i class="fas fa-folder-open"></i>
-                <span>EVIDENCIAS</span>
+                <span>📁 EVIDENCIAS</span>
             </button>
 
             <button class="Autobiografia" onclick="window.location.href='sobremi.html';">
                 <i class="fas fa-user"></i>
-                <span>SOBRE MÍ</span>
+                <span>👤 SOBRE MÍ</span>
             </button>
 
             <button class="Habilidades" onclick="window.location.href='habilidades.html';">
                 <i class="fas fa-cogs"></i>
-                <span>HABILIDADES</span>
+                <span>⚡ HABILIDADES</span>
             </button>
 
             <button class="referencias" onclick="window.location.href='referencias.html';">
                 <i class="fas fa-users"></i>
-                <span>REFERENCIAS</span>
+                <span>📝 REFERENCIAS</span>
             </button>
         </div>
     </section>
@@ -80,7 +80,7 @@
                 <div class="highlight-icon">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
-                <h3>Educación</h3>
+                <h3>🎓 Educación</h3>
                 <p>Licenciatura en Ingeniería en Sistemas Computacionales - Universidad Tres Culturas</p>
             </div>
 
@@ -88,7 +88,7 @@
                 <div class="highlight-icon">
                     <i class="fas fa-code"></i>
                 </div>
-                <h3>Tecnologías</h3>
+                <h3>💻 Tecnologías</h3>
                 <p>Java, Python, SQL, HTML, CSS, JavaScript, PHP</p>
             </div>
 
@@ -96,8 +96,32 @@
                 <div class="highlight-icon">
                     <i class="fas fa-project-diagram"></i>
                 </div>
-                <h3>Proyectos</h3>
+                <h3>🚀 Proyectos</h3>
                 <p>Desarrollo de aplicaciones web, sistemas de gestión y soluciones tecnológicas</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-container">
+            <h3>📊 Mis Logros</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">🏆 Certificaciones</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">📁 Proyectos Principales</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">💻 Tecnologías</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2025</div>
+                    <div class="stat-label">📅 Año Actual</div>
+                </div>
             </div>
         </div>
     </section>
@@ -128,42 +152,44 @@
 /* Estilos específicos para la página principal */
 .hero-section {
     text-align: center;
-    padding: 2rem 0 4rem 0;
-    max-width: 1000px;
+    padding: var(--spacing-lg) 0 var(--spacing-xl) 0;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .subtitle {
-    font-size: 1.3rem;
+    font-size: var(--font-xl);
     color: var(--text-light);
-    margin-bottom: 2rem;
-    font-weight: 300;
+    margin-bottom: var(--spacing-lg);
+    font-weight: 400;
 }
 
 .intro-text {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 0 2rem;
+    max-width: 700px;
+    margin: var(--spacing-lg) auto;
+    padding: 0 var(--spacing-md);
 }
 
 .intro-text p {
-    font-size: 1.1rem;
+    font-size: var(--font-md);
     line-height: 1.8;
     color: var(--text-light);
 }
 
 .quick-actions {
-    padding: 3rem 2rem;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    margin: 2rem 0;
+    padding: var(--spacing-xl) var(--spacing-md);
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(15px);
+    margin: var(--spacing-lg) 0;
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(216, 167, 202, 0.2);
 }
 
 .actions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    max-width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-md);
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -175,58 +201,60 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    padding: 2rem 1rem;
+    gap: var(--spacing-xs);
+    padding: var(--spacing-lg) var(--spacing-md);
     text-align: center;
-    min-height: 120px;
+    min-height: 140px;
     justify-content: center;
 }
 
 .actions-grid i {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing-xs);
 }
 
 .highlights {
-    padding: 4rem 2rem;
-    max-width: 1200px;
+    padding: var(--spacing-xl) var(--spacing-md);
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 .highlights-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
 }
 
 .highlight-card {
     background: var(--white);
-    padding: 2rem;
+    padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     text-align: center;
     transition: var(--transition);
-    border: 1px solid rgba(149, 27, 129, 0.1);
+    border: 2px solid rgba(216, 167, 202, 0.1);
 }
 
 .highlight-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
     box-shadow: var(--shadow-hover);
+    border-color: rgba(216, 167, 202, 0.3);
 }
 
 .highlight-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto var(--spacing-md) auto;
+    box-shadow: var(--shadow);
 }
 
 .highlight-icon i {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--white);
 }
 
@@ -234,13 +262,69 @@
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-xl);
 }
 
 .highlight-card p {
     color: var(--text-light);
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: var(--font-sm);
+}
+
+.stats-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--purple-pastel));
+    color: var(--white);
+    padding: var(--spacing-xl) var(--spacing-md);
+    margin: var(--spacing-xl) 0;
+}
+
+.stats-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.stats-container h3 {
+    font-family: 'Righteous', cursive;
+    font-size: var(--font-2xl);
+    margin-bottom: var(--spacing-lg);
+    color: var(--white);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.15);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.stat-number {
+    font-family: 'Righteous', cursive;
+    font-size: var(--font-3xl);
+    margin-bottom: var(--spacing-xs);
+    color: var(--white);
+}
+
+.stat-label {
+    font-weight: 600;
+    color: var(--white);
+    font-size: var(--font-sm);
+    opacity: 0.9;
 }
 
 @media (max-width: 768px) {
@@ -253,7 +337,11 @@
     }
     
     .hero-section {
-        padding: 1rem 0 2rem 0;
+        padding: var(--spacing-md) 0 var(--spacing-lg) 0;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -267,15 +355,24 @@
     .actions-grid .Autobiografia,
     .actions-grid .Habilidades,
     .actions-grid .referencias {
-        min-height: 80px;
-        padding: 1.5rem 1rem;
+        min-height: 100px;
+        padding: var(--spacing-md);
     }
     
     .actions-grid i {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
     }
 }
 </style>
+
+<!-- Botón de WhatsApp flotante -->
+<a href="https://wa.me/5547936309?text=Hola,%20quisiera%20más%20información%20sobre%20tus%20servicios" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <img src="Imagenes_pg/whatsapp.png" alt="WhatsApp">
+</a>
 
 <script src="script.js"></script>
 

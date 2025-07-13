@@ -342,27 +342,29 @@ function initializeFooterAnimation() {
         <div class="capabilities-showcase">
             <h3 class="capabilities-title">Conoce mis capacidades que podrían brindarte un gran apoyo en tu empresa</h3>
             <div class="rotating-skills">
-                <span class="skill active">Desarrollo Web Frontend</span>
-                <span class="skill">Bases de Datos SQL</span>
-                <span class="skill">Programación en Java</span>
-                <span class="skill">Desarrollo con Python</span>
-                <span class="skill">Diseño UI/UX</span>
-                <span class="skill">Gestión de Proyectos</span>
-                <span class="skill">Resolución de Problemas</span>
-                <span class="skill">Trabajo en Equipo</span>
+                <span class="skill active">💻 Desarrollo Web Frontend</span>
+                <span class="skill">🗄️ Bases de Datos SQL</span>
+                <span class="skill">☕ Programación en Java</span>
+                <span class="skill">🐍 Desarrollo con Python</span>
+                <span class="skill">🎨 Diseño UI/UX</span>
+                <span class="skill">📊 Gestión de Proyectos</span>
+                <span class="skill">🧩 Resolución de Problemas</span>
+                <span class="skill">👥 Trabajo en Equipo</span>
+                <span class="skill">🤖 Inteligencia Artificial</span>
+                <span class="skill">🌐 Redes de Computadoras</span>
             </div>
         </div>
         <div class="footer-navigation">
-            <h4>Navegación</h4>
+            <h4>🧭 Navegación</h4>
             <ul class="footer-nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobremi.html">Sobre Mí</a></li>
-                <li><a href="EXPERIENCIA.html">Experiencia</a></li>
-                <li><a href="habilidades.html">Habilidades</a></li>
-                <li><a href="CERTIFICADOS.html">Certificados</a></li>
-                <li><a href="referencias.html">Referencias</a></li>
-                <li><a href="evidencia.html">Evidencias</a></li>
-                <li><a href="CONTACTOS.html">Contacto</a></li>
+                <li><a href="index.html">🏠 Inicio</a></li>
+                <li><a href="sobremi.html">👤 Sobre Mí</a></li>
+                <li><a href="EXPERIENCIA.html">🎓 Experiencia</a></li>
+                <li><a href="habilidades.html">⚡ Habilidades</a></li>
+                <li><a href="CERTIFICADOS.html">🏆 Certificados</a></li>
+                <li><a href="referencias.html">📝 Referencias</a></li>
+                <li><a href="evidencia.html">📁 Evidencias</a></li>
+                <li><a href="CONTACTOS.html">📞 Contacto</a></li>
             </ul>
         </div>
     `;
@@ -379,6 +381,8 @@ function initializeFooterAnimation() {
             gap: var(--spacing-lg);
             margin-bottom: var(--spacing-lg);
             align-items: start;
+            position: relative;
+            z-index: 1;
         }
 
         .capabilities-showcase {
@@ -387,33 +391,43 @@ function initializeFooterAnimation() {
 
         .capabilities-title {
             font-family: 'Righteous', cursive;
-            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            font-size: clamp(1.3rem, 4vw, 2rem);
             margin-bottom: var(--spacing-md);
             color: white;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
             line-height: 1.3;
+            background: linear-gradient(45deg, #ffffff, #f8e8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
         .rotating-skills {
             position: relative;
-            height: clamp(50px, 10vw, 60px);
+            height: clamp(60px, 12vw, 80px);
             overflow: hidden;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .skill {
             position: absolute;
             width: 100%;
-            font-size: clamp(1rem, 3vw, 1.3rem);
+            font-size: clamp(1.1rem, 3.5vw, 1.4rem);
             font-weight: 600;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255,255,255,0.95);
             opacity: 0;
-            transform: translateY(60px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            transform: translateY(80px);
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100%;
+            padding: 0 1rem;
+            background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
         }
 
         .skill.active {
@@ -423,20 +437,29 @@ function initializeFooterAnimation() {
 
         .skill.exit {
             opacity: 0;
-            transform: translateY(-60px);
+            transform: translateY(-80px);
+        }
+
+        .footer-navigation {
+            background: rgba(255, 255, 255, 0.1);
+            padding: var(--spacing-md);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
         .footer-navigation h4 {
             font-family: 'Righteous', cursive;
-            font-size: clamp(1rem, 3vw, 1.3rem);
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
             margin-bottom: var(--spacing-sm);
             color: white;
+            text-align: center;
         }
 
         .footer-nav-links {
             list-style: none;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
             gap: var(--spacing-xs);
         }
 
@@ -445,21 +468,24 @@ function initializeFooterAnimation() {
         }
 
         .footer-nav-links a {
-            color: rgba(255,255,255,0.8);
+            color: rgba(255,255,255,0.9);
             text-decoration: none;
             transition: all 0.3s ease;
             padding: var(--spacing-xs);
             display: block;
-            border-radius: 4px;
+            border-radius: 8px;
             font-weight: 500;
             font-size: var(--font-sm);
             text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .footer-nav-links a:hover {
             color: white;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.2);
             transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
 
         @media (max-width: 768px) {
@@ -470,11 +496,11 @@ function initializeFooterAnimation() {
             }
             
             .capabilities-title {
-                font-size: clamp(1rem, 5vw, 1.4rem);
+                font-size: clamp(1.1rem, 5vw, 1.5rem);
             }
             
             .skill {
-                font-size: clamp(0.9rem, 4vw, 1.1rem);
+                font-size: clamp(1rem, 4vw, 1.2rem);
             }
             
             .footer-nav-links {
@@ -491,7 +517,7 @@ function initializeFooterAnimation() {
             }
             
             .rotating-skills {
-                height: 40px;
+                height: 50px;
             }
             
             .capabilities-title {
@@ -506,7 +532,7 @@ function initializeFooterAnimation() {
             }
             
             .rotating-skills {
-                height: 40px;
+                height: 50px;
             }
             
             .footer-nav-links {
@@ -538,12 +564,12 @@ function startSkillRotation() {
             skills[currentIndex].classList.remove('exit');
             currentIndex = (currentIndex + 1) % skills.length;
             skills[currentIndex].classList.add('active');
-        }, 400);
+        }, 500);
     }
 
     // Iniciar rotación
     function startRotation() {
-        rotationInterval = setInterval(rotateSkills, 3000);
+        rotationInterval = setInterval(rotateSkills, 3500);
     }
 
     // Pausar rotación cuando no está visible (optimización de rendimiento)
@@ -628,11 +654,11 @@ function createScrollToTopButton() {
     scrollButton.setAttribute('aria-label', 'Volver arriba');
     scrollButton.style.cssText = `
         position: fixed;
-        bottom: calc(var(--spacing-md) + 70px);
+        bottom: calc(var(--spacing-md) + 80px);
         right: var(--spacing-md);
-        width: clamp(45px, 10vw, 50px);
-        height: clamp(45px, 10vw, 50px);
-        background: var(--primary-color);
+        width: clamp(50px, 10vw, 60px);
+        height: clamp(50px, 10vw, 60px);
+        background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
         color: white;
         border: none;
         border-radius: 50%;
@@ -644,8 +670,9 @@ function createScrollToTopButton() {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        font-size: clamp(1rem, 2.5vw, 1.3rem);
         box-shadow: var(--shadow);
+        border: 2px solid rgba(255, 255, 255, 0.2);
     `;
 
     document.body.appendChild(scrollButton);
@@ -666,7 +693,7 @@ function createScrollToTopButton() {
         // Ocultar después de un tiempo sin scroll
         scrollTimeout = setTimeout(() => {
             if (window.pageYOffset > 300) {
-                scrollButton.style.opacity = '0.5';
+                scrollButton.style.opacity = '0.6';
             }
         }, 2000);
     });
@@ -706,7 +733,7 @@ function createRippleEffect(e) {
         height: ${size}px;
         left: ${x}px;
         top: ${y}px;
-        background: rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.4);
         border-radius: 50%;
         transform: scale(0);
         animation: ripple 0.6s linear;

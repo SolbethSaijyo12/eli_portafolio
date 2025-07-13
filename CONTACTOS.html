@@ -29,7 +29,7 @@
 <main id="main-content">
     <div class="main-contac">
         <div class="containercontac">
-            <h2 class="titulo">¡Conectemos!</h2>
+            <h2 class="titulo">💌 ¡Conectemos!</h2>
             <p class="contact-subtitle">
                 Estoy siempre abierta a nuevas oportunidades y colaboraciones. 
                 No dudes en contactarme para discutir proyectos, oportunidades laborales o simplemente para conectar.
@@ -40,7 +40,7 @@
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
                     <div>
-                        <h4>Email Principal</h4>
+                        <h4>📧 Email Principal</h4>
                         <p>e.elizabeth.jmnz12@gmail.com</p>
                         <small>Respuesta en 24 horas</small>
                     </div>
@@ -49,7 +49,7 @@
                 <div class="contact-item">
                     <i class="fab fa-whatsapp"></i>
                     <div>
-                        <h4>WhatsApp</h4>
+                        <h4>💬 WhatsApp</h4>
                         <p>+52 55 4793 6309</p>
                         <small>Disponible 9:00 AM - 8:00 PM</small>
                     </div>
@@ -58,7 +58,7 @@
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <div>
-                        <h4>Ubicación</h4>
+                        <h4>📍 Ubicación</h4>
                         <p>Estado de México, México</p>
                         <small>Disponible para trabajo remoto</small>
                     </div>
@@ -67,7 +67,7 @@
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
                     <div>
-                        <h4>LinkedIn</h4>
+                        <h4>💼 LinkedIn</h4>
                         <p>Crisol Elizabeth Castro</p>
                         <small>Red profesional</small>
                     </div>
@@ -76,7 +76,7 @@
 
             <!-- Redes sociales destacadas con diseño mejorado -->
             <div class="social-showcase">
-                <h3>Sígueme en mis redes sociales</h3>
+                <h3>🌟 Sígueme en mis redes sociales</h3>
                 <p class="social-description">
                     Mantente al día con mis proyectos, logros y contenido profesional
                 </p>
@@ -137,7 +137,7 @@
 
             <!-- Formulario de contacto mejorado -->
             <div class="contact-form-section">
-                <h3>Envíame un mensaje directo</h3>
+                <h3>✉️ Envíame un mensaje directo</h3>
                 <p class="form-description">
                     Completa el formulario y te responderé directamente a tu correo electrónico
                 </p>
@@ -186,12 +186,12 @@
                         </label>
                         <select id="asunto" name="asunto" required>
                             <option value="">Selecciona un asunto</option>
-                            <option value="Oportunidad Laboral">Oportunidad Laboral</option>
-                            <option value="Proyecto Freelance">Proyecto Freelance</option>
-                            <option value="Colaboración">Colaboración</option>
-                            <option value="Consulta Técnica">Consulta Técnica</option>
-                            <option value="Networking">Networking</option>
-                            <option value="Otro">Otro</option>
+                            <option value="Oportunidad Laboral">💼 Oportunidad Laboral</option>
+                            <option value="Proyecto Freelance">🚀 Proyecto Freelance</option>
+                            <option value="Colaboración">🤝 Colaboración</option>
+                            <option value="Consulta Técnica">🔧 Consulta Técnica</option>
+                            <option value="Networking">🌐 Networking</option>
+                            <option value="Otro">📝 Otro</option>
                         </select>
                     </div>
 
@@ -205,7 +205,7 @@
                     </div>
 
                     <div class="form-actions">
-                        <input type="submit" value="Enviar Mensaje" class="submit-btn">
+                        <input type="submit" value="🚀 Enviar Mensaje" class="submit-btn">
                         <p class="privacy-note">
                             <i class="fas fa-shield-alt"></i>
                             Tu información está protegida y solo será usada para responder tu consulta.
@@ -227,21 +227,21 @@
     <!-- Sección de disponibilidad -->
     <section class="availability-section">
         <div class="availability-container">
-            <h3>Mi Disponibilidad</h3>
+            <h3>⏰ Mi Disponibilidad</h3>
             <div class="availability-grid">
                 <div class="availability-item">
                     <i class="fas fa-briefcase"></i>
-                    <h4>Trabajo Remoto</h4>
+                    <h4>💻 Trabajo Remoto</h4>
                     <p>Disponible para proyectos remotos a tiempo completo o parcial</p>
                 </div>
                 <div class="availability-item">
                     <i class="fas fa-handshake"></i>
-                    <h4>Freelance</h4>
+                    <h4>🎯 Freelance</h4>
                     <p>Abierta a proyectos independientes y colaboraciones</p>
                 </div>
                 <div class="availability-item">
                     <i class="fas fa-users"></i>
-                    <h4>Consultoría</h4>
+                    <h4>🧠 Consultoría</h4>
                     <p>Asesoría técnica en desarrollo web y sistemas</p>
                 </div>
             </div>
@@ -272,17 +272,48 @@
 
 <style>
 /* Estilos específicos para la página de contacto */
+.main-contac {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: var(--spacing-lg);
+}
+
+.containercontac {
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-hover);
+    width: 100%;
+    max-width: 900px;
+    border: 1px solid rgba(216, 167, 202, 0.2);
+}
+
+.titulo {
+    font-family: 'Righteous', cursive;
+    font-size: var(--font-3xl);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    line-height: 1.2;
+    background: linear-gradient(135deg, var(--primary-color), var(--purple-pastel));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .contact-subtitle {
     text-align: center;
     font-size: var(--font-md);
     color: var(--text-light);
-    margin-bottom: var(--spacing-lg);
-    line-height: 1.6;
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.7;
 }
 
 .contact-info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-xl);
 }
@@ -295,27 +326,23 @@
     background: var(--light-bg);
     border-radius: var(--border-radius);
     transition: var(--transition);
-    border: 1px solid rgba(149, 27, 129, 0.1);
+    border: 2px solid rgba(216, 167, 202, 0.1);
 }
 
 .contact-item:hover {
-    background: var(--accent-color);
-    color: var(--white);
-    transform: translateY(-2px);
+    background: linear-gradient(135deg, var(--accent-light), var(--lavender));
+    transform: translateY(-3px);
     box-shadow: var(--shadow);
+    border-color: rgba(216, 167, 202, 0.3);
 }
 
 .contact-item i {
-    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    font-size: clamp(1.3rem, 3vw, 1.6rem);
     color: var(--primary-color);
-    width: 30px;
+    width: 35px;
     text-align: center;
     flex-shrink: 0;
     margin-top: 0.25rem;
-}
-
-.contact-item:hover i {
-    color: var(--white);
 }
 
 .contact-item div {
@@ -330,20 +357,18 @@
     color: var(--text-dark);
 }
 
-.contact-item:hover h4 {
-    color: var(--white);
-}
-
 .contact-item p {
     font-size: var(--font-sm);
     margin: 0 0 0.25rem 0;
     word-break: break-word;
     font-weight: 500;
+    color: var(--primary-color);
 }
 
 .contact-item small {
     font-size: var(--font-xs);
     opacity: 0.8;
+    color: var(--text-light);
 }
 
 /* Redes sociales mejoradas */
@@ -361,13 +386,13 @@
 
 .social-description {
     color: var(--text-light);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
     font-size: var(--font-sm);
 }
 
 .social-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: var(--spacing-md);
     margin-bottom: var(--spacing-lg);
 }
@@ -418,13 +443,13 @@
 }
 
 .social-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     box-shadow: var(--shadow-hover);
 }
 
 .social-icon {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -434,7 +459,7 @@
 }
 
 .social-icon i {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .social-info {
@@ -461,17 +486,17 @@
 
 .social-card:hover .social-arrow {
     opacity: 1;
-    transform: translateX(3px);
+    transform: translateX(4px);
 }
 
 /* Formulario mejorado */
 .contact-form-section {
-    background: var(--white);
-    padding: var(--spacing-lg);
+    background: var(--light-bg);
+    padding: var(--spacing-xl);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     margin-top: var(--spacing-xl);
-    border: 1px solid rgba(149, 27, 129, 0.1);
+    border: 2px solid rgba(216, 167, 202, 0.1);
 }
 
 .contact-form-section h3 {
@@ -491,7 +516,7 @@
 
 .form-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: var(--spacing-md);
 }
 
@@ -511,7 +536,7 @@
 
 .form-group label i {
     color: var(--primary-color);
-    width: 16px;
+    width: 18px;
 }
 
 .form-group input,
@@ -519,7 +544,7 @@
 .form-group select {
     width: 100%;
     padding: var(--spacing-sm);
-    border: 2px solid rgba(149, 27, 129, 0.1);
+    border: 2px solid rgba(216, 167, 202, 0.2);
     border-radius: var(--border-radius);
     font-family: 'Inter', sans-serif;
     font-size: var(--font-sm);
@@ -533,7 +558,7 @@
 .form-group select:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(149, 27, 129, 0.1);
+    box-shadow: 0 0 0 3px rgba(216, 167, 202, 0.2);
 }
 
 .form-group textarea {
@@ -553,23 +578,24 @@
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     color: var(--white);
     border: none;
-    padding: var(--spacing-sm) var(--spacing-lg);
-    border-radius: 50px;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    border-radius: 30px;
     font-family: 'Inter', sans-serif;
     font-weight: 600;
     font-size: var(--font-md);
     cursor: pointer;
     transition: var(--transition);
     box-shadow: var(--shadow);
-    min-width: 200px;
+    min-width: 220px;
 }
 
 .submit-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
     box-shadow: var(--shadow-hover);
+    background: linear-gradient(135deg, var(--accent-color), var(--purple-pastel));
 }
 
 .submit-btn:disabled {
@@ -603,16 +629,16 @@
 }
 
 .form-result.success {
-    background: #d4edda;
+    background: linear-gradient(135deg, #d4edda, #c3e6cb);
     color: #155724;
-    border: 1px solid #c3e6cb;
+    border: 2px solid #c3e6cb;
     display: block;
 }
 
 .form-result.error {
-    background: #f8d7da;
+    background: linear-gradient(135deg, #f8d7da, #f5c6cb);
     color: #721c24;
-    border: 1px solid #f5c6cb;
+    border: 2px solid #f5c6cb;
     display: block;
 }
 
@@ -621,8 +647,8 @@
     position: fixed;
     bottom: var(--spacing-md);
     right: var(--spacing-md);
-    width: clamp(60px, 12vw, 70px);
-    height: clamp(60px, 12vw, 70px);
+    width: clamp(65px, 12vw, 75px);
+    height: clamp(65px, 12vw, 75px);
     background: #25D366;
     border-radius: 50%;
     display: flex;
@@ -631,8 +657,9 @@
     box-shadow: var(--shadow-hover);
     z-index: 1000;
     transition: var(--transition);
-    animation: pulse 2s infinite;
+    animation: pulse 3s infinite;
     text-decoration: none;
+    border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .whatsapp-button:hover {
@@ -640,8 +667,8 @@
 }
 
 .whatsapp-button img {
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 65%;
 }
 
 .whatsapp-tooltip {
@@ -668,7 +695,7 @@
 
 /* Sección de disponibilidad */
 .availability-section {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color), var(--purple-pastel));
     color: var(--white);
     padding: var(--spacing-xl) var(--spacing-md);
     margin: var(--spacing-xl) 0;
@@ -689,25 +716,27 @@
 
 .availability-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: var(--spacing-lg);
 }
 
 .availability-item {
-    background: rgba(255, 255, 255, 0.1);
-    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.15);
+    padding: var(--spacing-lg);
     border-radius: var(--border-radius);
     backdrop-filter: blur(10px);
     transition: var(--transition);
+    border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .availability-item:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 .availability-item i {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: var(--spacing-sm);
 }
 
@@ -721,12 +750,20 @@
 .availability-item p {
     font-size: var(--font-sm);
     opacity: 0.9;
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    .main-contac {
+        padding: var(--spacing-md);
+    }
+    
+    .containercontac {
+        padding: var(--spacing-lg);
+    }
+    
     .contact-info {
         grid-template-columns: 1fr;
     }
@@ -749,7 +786,7 @@
     }
     
     .contact-form-section {
-        padding: var(--spacing-md);
+        padding: var(--spacing-lg);
     }
     
     .whatsapp-tooltip {
@@ -770,12 +807,12 @@
     }
     
     .social-icon {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     
     .social-icon i {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     
     .availability-grid {
@@ -791,7 +828,7 @@
     }
     
     .availability-section {
-        padding: var(--spacing-md);
+        padding: var(--spacing-lg) var(--spacing-md);
     }
 }
 
@@ -856,7 +893,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     // Deshabilitar botón y mostrar estado de carga
     submitButton.disabled = true;
     submitButton.classList.add('loading');
-    submitButton.textContent = "Enviando...";
+    submitButton.value = "Enviando...";
     
     fetch("procesar_formulario.php", {
         method: "POST",
@@ -900,7 +937,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         // Rehabilitar botón
         submitButton.disabled = false;
         submitButton.classList.remove('loading');
-        submitButton.textContent = "Enviar Mensaje";
+        submitButton.value = "🚀 Enviar Mensaje";
         
         // Scroll al resultado
         resultado.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -974,13 +1011,14 @@ function showSuccessAnimation() {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: var(--primary-color);
+        background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
         color: white;
         padding: 2rem;
         border-radius: 50%;
         font-size: 3rem;
         z-index: 10001;
         animation: successPulse 1s ease-out;
+        box-shadow: var(--shadow-hover);
     `;
     successDiv.innerHTML = '<i class="fas fa-check"></i>';
     
